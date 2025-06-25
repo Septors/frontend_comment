@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://frontend-comment.onrender.com" 
+  baseURL: "https://frontend-comment.onrender.com/" 
 });
 
 
