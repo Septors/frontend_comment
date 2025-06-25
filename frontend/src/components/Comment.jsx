@@ -28,13 +28,13 @@ export default function Comment({ comment }) {
         </button>
       )}
 
-      {showChildren && comment.replies && (
-        <div className="comment-children">
-          {comment.replies.map(child => (
-            <Comment key={child.id} comment={child} />
-          ))}
-        </div>
-      )}
+     {showChildren && Array.isArray(comment.replies) && (
+  <div className="comment-children">
+    {comment.replies.map(child => (
+      <Comment key={child.id} comment={child} />
+    ))}
+  </div>
+)}
     </div>
   );
 }
