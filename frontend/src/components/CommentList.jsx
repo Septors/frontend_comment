@@ -84,12 +84,12 @@ export default function CommentList() {
       {comment.filePath && (
         <div>
           {comment.filePath.endsWith(".txt") ? (
-            <a href={`http://localhost:5000/${comment.filePath}`} target="_blank" rel="noreferrer">
+            <a href={`https://frontend-comment.onrender.com/${comment.filePath}`} target="_blank" rel="noreferrer">
               Скачать файл
             </a>
           ) : (
             <img
-              src={`http://localhost:5000/${comment.filePath}`}
+              src={`https://frontend-comment.onrender.com/${comment.filePath}`}
               alt="Прикрепленный файл"
               style={{ maxWidth: "300px", marginTop: "10px" }}
             />
